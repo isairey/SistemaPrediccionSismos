@@ -88,8 +88,8 @@ prediccion_sismos/
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tuusuario/prediccion_sismos.git
-cd prediccion_sismos
+git clone https://github.com/isairey/SistemaPrediccionSismos.git
+cd SistemaPrediccionSismos
 ```
 Crear entorno virtual (opcional pero recomendado):
 ```
