@@ -1,96 +1,137 @@
-# prediccion_sismos
-# Sistema de Predicción de Sismos con Redes Neuronales
+# 🌍 Predicción de Sismos con Deep Learning
 
-Este proyecto consiste en el entrenamiento de dos modelos de deep learning (CNN y LSTM) para la predicción del comportamiento sísmico. Utiliza datos reales recolectados por el CENAIS y forma parte del informe de Práctica Laboral del tercer año de Ingeniería Informática en la Universidad de Oriente.
-
----
-
-## 📁 Estructura del Repositorio
-📦 nombre-del-repositorio/
-├── dataset/
-│   └── sismos.csv
-├── doc/
-│   └── informe_practica.pdf
-├── graficos/
-│   ├── modelo_cnn_resultado.png
-│   └── modelo_lstm_resultado.png
-├── models/
-│   ├── modelo_cnn.h5
-│   └── modelo_lstm.h5
-├── src/
-│   └── entrenar_modelos.py
-├── README.md
+Sistema de predicción de actividad sísmica basado en **redes neuronales profundas (CNN y LSTM)**, desarrollado para el análisis de patrones espaciales y temporales en datos sísmicos reales.
 
 ---
 
-🧠 Modelos Implementados
+## 📌 Descripción
 
-🧩 CNN – Red Neuronal Convolucional
+Este proyecto implementa modelos de **Deep Learning** para la predicción del comportamiento sísmico utilizando datos reales recolectados por el **CENAIS (Centro Nacional de Investigaciones Sismológicas)**.
 
-Captura patrones espaciales en secuencias de datos sísmicos.
+El objetivo principal es analizar series de tiempo sísmicas y detectar patrones que permitan anticipar posibles eventos o comportamientos relevantes.
 
-Arquitectura del modelo:
-
-Conv1D
-
-MaxPooling1D
-
-Dropout
-
-Flatten
-
-Dense
-
-
-
-🔁 LSTM – Long Short-Term Memory
-
-Aprende dependencias temporales en series de tiempo.
-
-Arquitectura del modelo:
-
-LSTM con retorno de secuencias
-
-Dropout
-
-LSTM final
-
-Dense de salida
-
-
-
+El sistema forma parte de una práctica académica en el área de **Ingeniería Informática**, enfocado en el uso de inteligencia artificial aplicada a fenómenos naturales.
 
 ---
 
-🛠️ Tecnologías y Herramientas Utilizadas
+## 🚀 Características
 
-Lenguaje de programación: Python
-
-Framework de Deep Learning: TensorFlow / Keras
-
-Manipulación y análisis de datos: Pandas, NumPy
-
-Visualización de resultados: Matplotlib
-
-Escalado de datos: Scikit-learn
-
-
+- 🌍 Análisis de datos sísmicos reales  
+- 🧠 Implementación de modelos CNN y LSTM  
+- 📊 Procesamiento de series de tiempo  
+- 📈 Visualización de resultados  
+- ⚡ Entrenamiento y evaluación de modelos  
+- 🗂️ Organización modular del proyecto  
 
 ---
 
-👩‍💻 Autora
+## 🧠 Modelos Implementados
 
-Madeley Graham
-Estudiante de 3er año de Ingeniería Informática
-Universidad de Oriente
-Práctica laboral realizada en el CENAIS (Centro Nacional de Investigaciones Sismológicas)
-Correo: madeleygraham9@gmail.com
+### 🔹 CNN (Red Neuronal Convolucional)
+
+Modelo enfocado en la detección de patrones espaciales dentro de los datos.
+
+**Arquitectura:**
+- Conv1D  
+- MaxPooling1D  
+- Dropout  
+- Flatten  
+- Dense  
+
+---
+
+### 🔹 LSTM (Long Short-Term Memory)
+
+Modelo especializado en el análisis de dependencias temporales en series de tiempo.
+
+**Arquitectura:**
+- LSTM (con retorno de secuencias)  
+- Dropout  
+- LSTM final  
+- Capa Dense de salida  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Python** → Lenguaje principal  
+- **TensorFlow / Keras** → Deep Learning  
+- **Pandas & NumPy** → Manipulación de datos  
+- **Matplotlib** → Visualización  
+- **Scikit-learn** → Preprocesamiento  
+
+---
+
+## 📂 Estructura del proyecto
+
+
+prediccion_sismos/
+│
+├── 📁 dataset/
+│ └── sismos.csv
+├── 📁 doc/
+│ └── informe_practica.pdf
+├── 📁 graficos/
+│ ├── modelo_cnn_resultado.png
+│ └── modelo_lstm_resultado.png
+├── 📁 models/
+│ ├── modelo_cnn.h5
+│ └── modelo_lstm.h5
+├── 📁 src/
+│ └── entrenar_modelos.py
+└── README.md
 
 
 ---
 
-🔁 Ramas del Repositorio
+## ⚙️ Instalación
 
-develop: Rama principal de desarrollo, donde se integran las funcionalidades.
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/tuusuario/prediccion_sismos.git
+cd prediccion_sismos
+Crear entorno virtual (opcional pero recomendado):
+python -m venv env
+source env/bin/activate   # Linux/Mac
+env\Scripts\activate      # Windows
+Instalar dependencias:
+pip install -r requirements.txt
+▶️ Ejecución
 
-principal: Rama estable, lista para revisión o entrega académica.
+Entrenar los modelos:
+
+python src/entrenar_modelos.py
+📊 Resultados
+
+El proyecto incluye visualizaciones comparativas del desempeño de los modelos:
+
+📈 Resultados de CNN
+📉 Resultados de LSTM
+
+Los modelos entrenados se almacenan en la carpeta /models.
+
+💡 Funcionamiento
+
+El sistema realiza:
+
+📥 Carga de datos sísmicos
+🧹 Preprocesamiento y normalización
+🧠 Entrenamiento de modelos
+📊 Evaluación de resultados
+💾 Guardado de modelos entrenados
+📈 Mejoras futuras
+🔍 Optimización de hiperparámetros
+🤖 Implementación de modelos híbridos
+📡 Integración con datos en tiempo real
+☁️ Despliegue en la nube
+📊 Dashboard interactivo
+🔁 Ramas del repositorio
+develop → Desarrollo activo
+principal → Versión estable
+⚠️ Nota
+
+Este proyecto es de carácter académico y experimental, enfocado en el aprendizaje y aplicación de técnicas de inteligencia artificial en el análisis de datos sísmicos.
+
+👨‍💻 Autor
+
+Adaptado y presentado por Isai Reyes Peña
