@@ -64,7 +64,7 @@ Modelo especializado en el análisis de dependencias temporales en series de tie
 
 ## 📂 Estructura del proyecto
 
-
+```
 prediccion_sismos/
 │
 ├── 📁 dataset/
@@ -80,7 +80,7 @@ prediccion_sismos/
 ├── 📁 src/
 │ └── entrenar_modelos.py
 └── README.md
-
+```
 
 ---
 
@@ -90,48 +90,66 @@ prediccion_sismos/
 ```bash
 git clone https://github.com/tuusuario/prediccion_sismos.git
 cd prediccion_sismos
+```
 Crear entorno virtual (opcional pero recomendado):
+```
 python -m venv env
 source env/bin/activate   # Linux/Mac
 env\Scripts\activate      # Windows
+```
 Instalar dependencias:
+```
 pip install -r requirements.txt
-▶️ Ejecución
+```
+---
+
+## ▶️ Ejecución
 
 Entrenar los modelos:
-
+```
 python src/entrenar_modelos.py
-📊 Resultados
+```
+---
+
+## 📊 Resultados
 
 El proyecto incluye visualizaciones comparativas del desempeño de los modelos:
 
-📈 Resultados de CNN
-📉 Resultados de LSTM
+- 📈 Resultados de CNN
+- 📉 Resultados de LSTM
 
 Los modelos entrenados se almacenan en la carpeta /models.
 
-💡 Funcionamiento
+---
+
+## 💡 Funcionamiento
 
 El sistema realiza:
 
-📥 Carga de datos sísmicos
-🧹 Preprocesamiento y normalización
-🧠 Entrenamiento de modelos
-📊 Evaluación de resultados
-💾 Guardado de modelos entrenados
-📈 Mejoras futuras
-🔍 Optimización de hiperparámetros
-🤖 Implementación de modelos híbridos
-📡 Integración con datos en tiempo real
-☁️ Despliegue en la nube
-📊 Dashboard interactivo
-🔁 Ramas del repositorio
+- 📥 Carga de datos sísmicos
+- 🧹 Preprocesamiento y normalización
+- 🧠 Entrenamiento de modelos
+- 📊 Evaluación de resultados
+- 💾 Guardado de modelos entrenados
+- 📈 Mejoras futuras
+- 🔍 Optimización de hiperparámetros
+- 🤖 Implementación de modelos híbridos
+- 📡 Integración con datos en tiempo real
+- ☁️ Despliegue en la nube
+- 📊 Dashboard interactivo
+- 🔁 Ramas del repositorio
+```
 develop → Desarrollo activo
 principal → Versión estable
-⚠️ Nota
+```
+---
+
+## ⚠️ Nota
 
 Este proyecto es de carácter académico y experimental, enfocado en el aprendizaje y aplicación de técnicas de inteligencia artificial en el análisis de datos sísmicos.
 
-👨‍💻 Autor
+---
 
-Adaptado y presentado por Isai Reyes Peña
+## 👨‍💻 Autor
+
+Adaptado y presentado por **Isai Reyes Peña**
